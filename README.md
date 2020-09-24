@@ -1,3 +1,32 @@
+# [Developer Portfolio Website using React](https://www.youtube.com/playlist?list=PLQKg8mIgoxKop9l92Zjd-Pmxkf-HQmclQ)
+
+### API used : 
+
+## Project creation step
+
+- `create-react-app me-react-portfolio2`
+- `npm start` or `yarn start`
+
+## Topics Cover
+- create react app
+- linear gradient
+
+## Quick Start
+1.  Clone the repo `git clone https://github.com/bipon68/me-react-portfolio2`
+2.  Go to your project folder from your terminal
+3.  Run: `npm install` or `yarn install`
+4.  After install, run: `npm run dev`
+5.  It will open your browser(http://localhost:3000)
+
+## Reference
+- [Create React App](https://github.com/facebook/create-react-app)
+- [UI Gradient](https://uigradients.com/#WitchingHour)
+
+## Channel: [JavaScript Mastery](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

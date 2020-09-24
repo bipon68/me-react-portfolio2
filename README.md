@@ -21,8 +21,9 @@
 ## Reference
 - [Create React App](https://github.com/facebook/create-react-app)
 - [UI Gradient](https://uigradients.com/#WitchingHour)
+- [BEM](http://getbem.com/) - BEM — Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development
 
-## Channel: [JavaScript Mastery](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A)
+## Channel: [Backbench Coder](https://www.youtube.com/channel/UClW8d1f5m0QAE_Ig024EP6A)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

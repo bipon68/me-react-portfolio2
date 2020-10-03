@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Navbar = () => {
+
+    const [active, setActive] = useState('About')
+
     return (
         <div className="navbar">
             <div className="navbar__active">
-                About
+               {active}
             </div>
             <div className="navbar__items">
                 <div className="navbar__item">About</div>

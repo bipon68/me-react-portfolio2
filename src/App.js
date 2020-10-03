@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import About from './components/About';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -16,6 +19,19 @@ function App() {
             </div>
             <div className="col-lg-9 app__main-content">
               <Navbar />
+
+              <Switch>
+                <Route exact path="/">
+                  <About />
+                </Route>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+                <Route path="/projects" component={Projects} />
+                <Route>
+                  <Redirect to="/" />
+                </Route>
+              </Switch>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@
 ## Project creation step
 
 - `create-react-app me-react-portfolio2`
+- `npm i react-router-dom`
 - `npm start` or `yarn start`
 
 ## Topics Cover

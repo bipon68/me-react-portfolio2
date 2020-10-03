@@ -1,4 +1,4 @@
-# [Developer Portfolio Website using React](https://www.youtube.com/playlist?list=PLQKg8mIgoxKop9l92Zjd-Pmxkf-HQmclQ)
+# [Me Portfolio Website using React]
 
 ### API used : 
 
@@ -30,8 +30,6 @@
 - Auto Import
 - Emmet(pre-installed in vs code)
 - Prettier - Code formatter
-
-## Channel: [Backbench Coder](https://www.youtube.com/channel/UClW8d1f5m0QAE_Ig024EP6A)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

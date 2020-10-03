@@ -34,10 +34,6 @@ const Navbar = () => {
             <Link to="/projects">
                 {active !== 'Projects' && <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>}
             </Link>
-            
-                
-                
-                
             </div>
         </div>
     )

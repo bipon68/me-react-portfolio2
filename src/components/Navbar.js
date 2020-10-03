@@ -10,9 +10,16 @@ const Navbar = () => {
                {active}
             </div>
             <div className="navbar__items">
-                <div className="navbar__item">About</div>
-                <div className="navbar__item">Resume</div>
-                <div className="navbar__item">Projects</div>
+
+            {active !== 'About' && <div className="navbar__item" onClick={() => setActive('About')}>About</div>}
+
+            {active !== 'Resume'&& <div className="navbar__item" onClick={() => setActive('Resume')}>Resume</div>
+            }
+
+            {active !== 'Projects' && <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>}
+                
+                
+                
             </div>
         </div>
     )

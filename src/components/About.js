@@ -21,7 +21,7 @@ const skills = [
     {
         icon: repair,
         title: "Backend  Development",
-        about: "handle database, server, api using",
+        about: "handle database, server, api using NodeJS",
     },
     {
         icon: api,

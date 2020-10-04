@@ -11,6 +11,9 @@
 ## Topics Cover
 - create react app
 - linear gradient
+- ES6 function
+- destructing, object destructing
+- props
 
 ## Quick Start
 1.  Clone the repo `git clone https://github.com/bipon68/me-react-portfolio2`

@@ -10,8 +10,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="container">
-          <div className="row">
+        <div className="container app__container">
+          <div className="row app__row">
             <div className="col-lg-3">
               <div className="app__sidebar">
                 <Sidebar />

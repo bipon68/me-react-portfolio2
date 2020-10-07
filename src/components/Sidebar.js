@@ -7,6 +7,7 @@ import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
 import mightycoder from "../assets/mightycoder.svg";
 import resume from "../assets/resume.pdf";
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
 
@@ -14,9 +15,29 @@ const Sidebar = () => {
         window.open("mailto:bipon770@gmail.com")
     }
 
+    const sidebar_variant = {
+      hidden: {
+          x: '-10vw',
+          opacity: 0
+      },
+      visible: {
+          x: 0,
+          opacity: 1,
+          transition: {
+              delay: 0.2, 
+              duration: 0.7, 
+              type: 'spring'
+          }
+      }
+  }
+
 
   return (
-    <div className="sidebar">
+    <motion.div className="sidebar"
+        variants={sidebar_variant}
+        initial = 'hidden'
+        animate='visible'
+    >
       <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
       <div className="sidebar__name">
         Bipon <span>Biswas</span>{" "}
@@ -53,7 +74,7 @@ const Sidebar = () => {
       <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>
         email me
       </div>
-    </div>
+    </motion.div>
   );
 };
 

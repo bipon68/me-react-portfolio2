@@ -10,6 +10,8 @@ import puzzle from '../assets/icons/puzzle.svg'
 import api from '../assets/icons/api.svg'
 import Skillcard from './Skillcard';
 
+import { motion } from "framer-motion";
+
 
 
 const skills = [
@@ -45,9 +47,27 @@ const skills = [
     },
 ]
 
+
+const about_variant = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.2, 
+            duration: 0.7
+        }
+    }
+}
+
 const About = () => {
     return (
-        <div className="about">
+        <motion.div className="about"
+            variants={about_variant}
+            initial='hidden'
+            animate='visible'
+        >
             <h6 className="about__intro">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro tempore pariatur.
             </h6>
@@ -64,7 +84,7 @@ const About = () => {
                     }
                 </div>
             </div>  
-        </div>
+        </motion.div>
     )
 }
 

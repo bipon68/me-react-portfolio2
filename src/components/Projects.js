@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import data_project from './data/projects_data';
 import ProjectCard from './ProjectCard';
+import { motion } from "framer-motion";
 
 const Projects = () => {
 
@@ -11,8 +12,25 @@ const Projects = () => {
         setProjects(new_array)
     }
 
+    const project_variant = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.2, 
+                duration: 0.7
+            }
+        }
+    }
+
     return (
-        <div className="container projects">
+        <motion.div className="container projects"
+            variants={project_variant}
+            initial = 'hidden'
+            animate='visible'
+        >
 
             <div className="projects__navbar">
                 <div onClick={() => setProjects(data_project)}>All</div>
@@ -29,7 +47,7 @@ const Projects = () => {
                         )
                 }
             </div>
-        </div>
+        </motion.div>
     )
 }
 

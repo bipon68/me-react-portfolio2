@@ -64,6 +64,12 @@ const resume_variant = {
             delay: 0.2, 
             duration: 0.7
         }
+    },
+    exit: {
+        opacity: 0,
+        transition: {
+            ease: 'easeInOut'
+        }
     }
 }
 
@@ -73,6 +79,7 @@ const Resume = () => {
             variants={resume_variant}
             initial='hidden'
             animate='visible'
+            exit='exit'
         >
             <div className="row">
                 <div className="col-lg-6 resume-card" >

@@ -58,6 +58,12 @@ const about_variant = {
             delay: 0.2, 
             duration: 0.7
         }
+    },
+    exit: {
+        opacity: 0,
+        transition: {
+            ease: 'easeInOut'
+        }
     }
 }
 
@@ -67,6 +73,7 @@ const About = () => {
             variants={about_variant}
             initial='hidden'
             animate='visible'
+            exit='exit'
         >
             <h6 className="about__intro">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro tempore pariatur.

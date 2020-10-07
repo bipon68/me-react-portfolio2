@@ -22,6 +22,12 @@ const Projects = () => {
                 delay: 0.2, 
                 duration: 0.7
             }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                ease: 'easeInOut'
+            }
         }
     }
 
@@ -30,6 +36,7 @@ const Projects = () => {
             variants={project_variant}
             initial = 'hidden'
             animate='visible'
+            exit="exit"
         >
 
             <div className="projects__navbar">

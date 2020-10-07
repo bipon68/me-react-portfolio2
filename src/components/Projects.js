@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import data_project from './data/projects_data';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
     return (
-        <div>
-            <h1>This is projects</h1>
+        <div className="container projects">
+
+            <div className="row">
+                {
+                    data_project.map(project => 
+                        <ProjectCard key={project.name} project={project}/>
+                        )
+                }
+            </div>
         </div>
     )
 }

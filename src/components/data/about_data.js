@@ -1,3 +1,5 @@
+import React from 'react';
+
 import algo from '../../assets/icons/algo.svg'
 import repair from '../../assets/icons/repair.svg'
 import computer from '../../assets/icons/computer.svg'
@@ -10,7 +12,7 @@ const skills = [
     {
         icon: computer,
         title: "Frontend Development",
-        about: "I can build a beautiful and scalable SPA using HTML, CSS and React.js"
+        about: "I can build a beautiful and scalable SPA using  HTML, CSS and React.js"
     },
     {
         icon: repair,
@@ -20,7 +22,7 @@ const skills = [
     {
         icon: api,
         title: "API Development",
-        about: "I can develop robust REST API using NodeJS "
+        about: ["I can develop robust REST API using", <strong key={1}> NodeJS </strong>]
     },
     {
         icon: algo,

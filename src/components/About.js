@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 import skills from './data/about_data';
 
 
-
-
 const about_variant = {
     hidden: {
         opacity: 0

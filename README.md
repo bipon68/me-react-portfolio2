@@ -9,6 +9,16 @@
 - `npm i framer-motion`
 - `npm start` or `yarn start`
 
+## Project creation api step by step
+
+- `npm init -y`
+- `npm install --save express`
+-  add package.json file `"type": "module"`
+- nodemon `npm install --save-dev nodemon`
+- `  "scripts": {
+    "start": "nodemon index.js"
+  },`
+
 ## Topics Cover
 - create react app
 - linear gradient

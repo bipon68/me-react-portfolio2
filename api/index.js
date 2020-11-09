@@ -1,11 +1,22 @@
-const express = require ("express");
-const bodyParser= require('body-parser')
+// const express = require ("express");
+// const bodyParser= require('body-parser')
 
+import express from "express";
+import bodyParser from "body-parser";
+
+import usersRoutes from "./routes/users.js";
+
+// import express from 'express'
+
+//const usersRoutes = require('./routes/users.js') ;
+// import usersRoutes from './routes/users.js';
 
 const app = express();
 const PORT = 5000;
 
 app.use(bodyParser.json());
+
+app.use('/users', usersRoutes);
 
 app.get('/', (req, res) => {
     console.log('test')

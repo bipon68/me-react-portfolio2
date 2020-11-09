@@ -3,8 +3,23 @@ import express from 'express';
 
 const router = express.Router()
 
+const users = [
+    {
+        firstName: "John",
+        lastName: "Doe",
+        age: 28
+    },
+    {
+        firstName: "Simon",
+        lastName: "Lee",
+        age: 23
+    }
+]
+
 router.get('/', (req, res) => {
-    res.send('Hello users')
+    console.log(users)
+    //res.send('Hello users')
+    res.send(users)
 })
 
 export default router;

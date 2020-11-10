@@ -1,4 +1,5 @@
 import express from 'express';
+import {GetUser} from '../Repository/user.repository.js'
 const users = [
     {
         firstName: "John1",
@@ -17,7 +18,9 @@ const users = [
     }
 ]
 export const GetUsers=(req,res)=>{
-    res.send(users)
+    // res.send(users)
+    console.log(GetUser);
+    // let x=GetUser;
 };
 
 export const CreateUser = (req, res) => {

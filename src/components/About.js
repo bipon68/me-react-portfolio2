@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from "axios";
 
 import Skillcard from './Skillcard';
 
@@ -27,6 +28,23 @@ const about_variant = {
 }
 
 const About = () => {
+
+    let responseData = null;
+
+    const headers = {
+        'Content-Type': 'application/json;charset=UTF-8',
+        authorization: "Bearer "
+      }
+
+    axios.get(`http://localhost:5000/users`, {
+        headers: headers
+    })
+    .then(response => {
+        responseData = response.data[0]
+        console.log('response : ', responseData)
+    })
+    
+
     return (
         <motion.div className="about"
             variants={about_variant}
@@ -35,6 +53,7 @@ const About = () => {
             exit='exit'
         >
             <h6 className="about__intro">
+                {responseData}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro tempore pariatur.
             </h6>
             <div className="container about__container">

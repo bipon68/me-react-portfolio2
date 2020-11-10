@@ -39,6 +39,7 @@
 - [BEM](http://getbem.com/) - BEM — Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development
 - [Framer Motion](https://github.com/framer/motion)
 - [Framer Motion API](https://www.framer.com/api/motion/)
+- [cors](https://expressjs.com/en/resources/middleware/cors.html)
 
 
 ## Extensions list:

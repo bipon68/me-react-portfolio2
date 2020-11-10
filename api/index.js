@@ -9,7 +9,7 @@ import cors from 'cors';
 
 
 
-import usersRoutes from "./routes/users.js";
+import userController from "./Controllers/users.controllers.js";
 
 // import express from 'express'
 
@@ -21,7 +21,7 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('/users', usersRoutes);
+app.use('/users', userController);
 
 app.get('/', (req, res) => {
     console.log('test')

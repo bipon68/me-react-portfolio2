@@ -1,11 +1,7 @@
-// const express = require ("express");
 import express from 'express';
-
-const router = express.Router()
-
 const users = [
     {
-        firstName: "John",
+        firstName: "John1",
         lastName: "Doe",
         age: 28
     },
@@ -13,23 +9,25 @@ const users = [
         firstName: "Simon",
         lastName: "Lee",
         age: 23
+    },
+    {
+        firstName: "Nayem",
+        lastName: "Lee",
+        age: 23
     }
 ]
-
-router.get('/', (req, res) => {
-    console.log(users)
-    //res.send('Hello users')
+export const GetUsers=(req,res)=>{
     res.send(users)
-})
+};
 
-router.post('/', (req, res) => {
+export const CreateUser = (req, res) => {
     console.log('Post request done');
 
     const user = req.body;
     users.push(user);
 
     res.send(`User with the name ${user.firstName} added to the database`)
-})
+}
 
 
-export default router;
+

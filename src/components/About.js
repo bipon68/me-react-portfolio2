@@ -1,5 +1,5 @@
 import React from 'react';
-// import axios from "axios";
+import axios from "axios";
 
 import Skillcard from './Skillcard';
 
@@ -29,20 +29,21 @@ const about_variant = {
 
 const About = () => {
 
-    // let responseData = null;
+    let responseData = null;
 
-    // const headers = {
-    //     'Content-Type': 'application/json;charset=UTF-8',
-    //     authorization: "Bearer "
-    //   }
+    const headers = {
+        'Content-Type': 'application/json;charset=UTF-8',
+        authorization: "Bearer "
+      }
 
-    // axios.get(`http://localhost:5000/users`, {
-    //     headers: headers
-    // })
-    // .then(response => {
-    //     responseData = response.data[0]
-    //     console.log('response : ', responseData)
-    // })
+    axios.get(`http://localhost:5000/users`, {
+        headers: headers
+    })
+    .then(response => {
+       responseData = response.data
+        console.log('response : ', responseData)
+        // console.log('response : ', response)
+    })
     
 
     return (

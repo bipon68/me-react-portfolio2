@@ -1,5 +1,5 @@
 import express from 'express';
-import {GetUser} from '../Repository/user.repository.js'
+// import {GetUser} from '../Repository/user.repository.js'
 const users = [
     {
         firstName: "John1",
@@ -17,10 +17,23 @@ const users = [
         age: 23
     }
 ]
+
+
+
+import {con} from '../db/db_connection.js'
+
+
+con.connect(function(err) {
+    console.log("DB Connected!");
+  });
+
+
 export const GetUsers=(req,res)=>{
-    // res.send(users)
-    console.log(GetUser);
-    // let x=GetUser;
+    con.query("SELECT * FROM HR_USER", function (err, result, fields) {
+        //return result;
+        res.send(result)
+        // console.log(result);
+      });
 };
 
 export const CreateUser = (req, res) => {
